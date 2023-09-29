@@ -1279,9 +1279,9 @@ Returns `boolean` - Whether the current desktop environment is Unity launcher.
 
 * `options` Object (optional)
   * `type` string (optional) _macOS_ - Can be one of `mainAppService`, `agentService`, `daemonService`, or `loginItemService`. Defaults to `mainAppService`. Only available on macOS 13 and up. See [app.setLoginItemSettings](app.md#appsetloginitemsettingssettings-macos-windows) for more information about each type.
-  * `name` string (optional) _macOS_ - The name of the service. Required if `type` is non-default. Only available on macOS 13 and up.
+  * `serviceName` string (optional) _macOS_ - The name of the service. Required if `type` is non-default. Only available on macOS 13 and up.
   * `path` string (optional) _Windows_ - The executable path to compare against. Defaults to `process.execPath`.
-  * `args` string[] (optional) _Windows_ - The command-line arguments to compare against. Defaults to an empty array.
+  * `args` string[] (optional) _Windows_ - The command-line arguments to compare against. Defaults to an empty array.i
 
 If you provided `path` and `args` options to `app.setLoginItemSettings`, then you
 need to pass the same arguments here for `openAtLogin` to be set correctly.
